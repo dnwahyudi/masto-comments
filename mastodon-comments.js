@@ -6,7 +6,7 @@
     const scriptElement = document.currentScript;
     const config = {
         statusId: scriptElement.getAttribute('data-status-id') || '',
-        instance: scriptElement.getAttribute('data-instance') || 'mas.to',
+        instance: scriptElement.getAttribute('data-instance') || 'mastodon.social',
         username: scriptElement.getAttribute('data-username') || '',
         scriptURL: "https://script.google.com/macros/s/AKfycbxJgEoaCTvb1DzPsKnnqIA8wcCd-XSa1QcWaCKsBHuD57vbnu-5g2kZ9PTj4LlVExJkiQ/exec",
         maxComments: 50,

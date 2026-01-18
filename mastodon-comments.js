@@ -194,6 +194,7 @@
         .comment-avatar {
             width: 48px;
             height: 48px;
+            aspect-ratio: 1 / 1
             border-radius: 50%;
             object-fit: cover;
             flex-shrink: 0;
@@ -396,12 +397,12 @@
             
             .mastodon-comment {
                 flex-direction: column;
-                text-align: center;
+                text-align: left;
                 padding: 16px;
             }
             
             .comment-avatar {
-                align-self: center;
+                align-self: left;
             }
             
             .comment-header {

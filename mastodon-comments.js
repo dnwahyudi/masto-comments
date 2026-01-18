@@ -174,7 +174,7 @@
         }
         
         /* ===== COMMENT ITEM ===== */
-    .mastodon-comment {
+        .mastodon-comment {
             display: flex;
             gap: 14px;
             padding: 18px;
@@ -183,52 +183,24 @@
             border: 1px solid var(--border);
             transition: all 0.3s ease;
             position: relative;
-            }
+            z-index: 2;
+        }
+        
+        .mastodon-comment:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow);
+        }
         
         .comment-avatar {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    border-radius: 50%;
-}
-    
-    /* Container untuk avatar (optional tapi lebih baik) */
-   .avatar-container {
-    width: 48px;
-    height: 48px;
-    flex-shrink: 0;
-    position: relative;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid white;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-}    
-    
-    .avatar-container img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position: center;
-        display: block;
-    }
-    
-    /* Fallback untuk gambar error */
-    .avatar-fallback {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 18px;
-}
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            border: 2px solid white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
         
         .comment-content {
             flex: 1;

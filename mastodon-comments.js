@@ -174,18 +174,16 @@
         }
         
         /* ===== COMMENT ITEM ===== */
-        .mastodon-comment > img[class*="avatar"],
-.mastodon-comment > div > img[class*="avatar"] {
-    width: 48px !important;
-    height: 48px !important;
-    object-fit: cover !important;
-    border-radius: 50% !important;
-    flex-shrink: 0 !important;
-        
-        .mastodon-comment:hover {
-            border-color: var(--primary);
-            box-shadow: var(--shadow);
-        }
+    .mastodon-comment {
+            display: flex;
+            gap: 14px;
+            padding: 18px;
+            background: var(--bg-light);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            position: relative;
+            }
         
         .comment-avatar {
     width: 100%;

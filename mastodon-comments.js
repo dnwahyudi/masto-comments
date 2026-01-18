@@ -210,11 +210,16 @@
     
     /* Container untuk avatar (optional tapi lebih baik) */
     .avatar-container {
-        width: 48px;
-        height: 48px;
-        flex-shrink: 0;
-        position: relative;
-    }
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    }    
     
     .avatar-container img {
         width: 100%;

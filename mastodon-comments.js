@@ -176,6 +176,7 @@
         /* ===== COMMENT ITEM ===== */
         .mastodon-comment {
             display: flex;
+            align-items: flex-start;
             gap: 14px;
             padding: 18px;
             background: var(--bg-light);
@@ -195,6 +196,7 @@
             width: 48px;
             height: 48px;
             aspect-ratio: 1 / 1;
+            align-self: flex-start;
             border-radius: 50%;
             object-fit: cover;
             flex-shrink: 0;

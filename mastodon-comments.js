@@ -192,15 +192,54 @@
         }
         
         .comment-avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            object-fit: cover;
-            flex-shrink: 0;
-            border: 2px solid white;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-        }
+        width: 48px;
+        height: 48px;
+        min-width: 48px; /* Tambahkan ini */
+        min-height: 48px; /* Tambahkan ini */
+        border-radius: 50%;
+        object-fit: cover; /* PENTING: crop untuk fill container */
+        object-position: center; /* Fokus ke tengah gambar */
+        flex-shrink: 0;
+        border: 2px solid white;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        display: block; /* Pastikan display block */
+        aspect-ratio: 1 / 1; /* Pastikan rasio 1:1 */
+        overflow: hidden; /* Potong overflow */
+    }
+    
+    /* Container untuk avatar (optional tapi lebih baik) */
+    .avatar-container {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        position: relative;
+    }
+    
+    .avatar-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+    
+    /* Fallback untuk gambar error */
+    .avatar-fallback {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 18px;
+        border: 2px solid white;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
         
         .comment-content {
             flex: 1;

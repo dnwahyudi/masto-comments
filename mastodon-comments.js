@@ -194,7 +194,7 @@
         .comment-avatar {
             width: 48px;
             height: 48px;
-            aspect-ratio: 1 / 1
+            aspect-ratio: 1 / 1;
             border-radius: 50%;
             object-fit: cover;
             flex-shrink: 0;
